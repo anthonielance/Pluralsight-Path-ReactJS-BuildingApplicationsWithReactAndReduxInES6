@@ -10,7 +10,6 @@
     "lint:watch": "npm run lint -- --watch",
     "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch"
-
   },
   "author": "Anthonie Lance",
   "license": "MIT",
@@ -43,6 +42,7 @@
     "css-loader": "0.23.1",
     "enzyme": "2.2.0",
     "eslint": "2.9.0",
+    "eslint-loader": "^1.7.1",
     "eslint-plugin-import": "1.6.1",
     "eslint-plugin-react": "5.0.1",
     "eslint-watch": "2.1.11",

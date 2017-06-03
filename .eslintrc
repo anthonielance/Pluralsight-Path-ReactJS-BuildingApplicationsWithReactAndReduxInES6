@@ -19,7 +19,8 @@
     "browser": true,
     "node": true,
     "jquery": true,
-    "mocha": true
+    "mocha": true,
+    "commonjs": true
   },
   "rules": {
     "quotes": 0,
