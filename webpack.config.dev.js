@@ -23,19 +23,19 @@ export default {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
-  eslint: {
-    failOnWarning: false,
-    failOnError: true
-  },
+  // eslint: {
+  //   failOnWarning: false,
+  //   failOnError: true
+  // },
   module: {
-    preLoaders: [{ test: /\.js?$/, loader: "eslint", exclude: /node_modules/ }],
+    //preLoaders: [{ test: /\.js?$/, loader: "eslint", exclude: /node_modules/ }],
     loaders: [
       {
         test: /\.js$/,
         include: path.join(__dirname, "src"),
         loaders: ["babel"]
       },
-      { test: /(\.css)$/, loaders: ["style", "css?sourceMap"] },
+      { test: /(\.css)$/, loaders: ["style", "css"] },
       { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
       { test: /\.(woff|woff2)$/, loader: "url?prefix=font/&limit=5000" },
       {
