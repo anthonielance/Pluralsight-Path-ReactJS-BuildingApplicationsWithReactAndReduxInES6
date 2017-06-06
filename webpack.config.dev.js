@@ -23,12 +23,12 @@ export default {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],
-  // eslint: {
-  //   failOnWarning: false,
-  //   failOnError: true
-  // },
+  eslint: {
+    failOnWarning: false,
+    failOnError: true
+  },
   module: {
-    //preLoaders: [{ test: /\.js?$/, loader: "eslint", exclude: /node_modules/ }],
+    preLoaders: [{ test: /\.js?$/, loader: "eslint", exclude: /node_modules/ }],
     loaders: [
       {
         test: /\.js$/,
